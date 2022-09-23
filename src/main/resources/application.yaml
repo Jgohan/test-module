@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/test_db
+    username: # place for your username
+    password: # place for your password
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    generate-ddl: false
+    open-in-view: false
+    show_sql: true
+    hibernate:
+      ddl-auto: validate
+  liquibase:
+    enabled: true
